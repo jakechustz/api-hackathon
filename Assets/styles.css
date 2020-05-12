@@ -1,0 +1,58 @@
+body {
+  background-image: url(./Images/dininghall1.png);
+  background-repeat: no-repeat;
+  background-size: 85rem 60rem;
+}
+
+
+
+
+.newspaper {
+  width: 30rem;
+  height: auto;
+}
+
+.video-container {
+  margin-top: 15.5rem;
+  margin-left: -3rem;
+  position: absolute;
+}
+
+.video-holder {
+  width: 18rem;
+  height: 13rem;
+  border: black;
+}
+
+.daily-prophet-container {
+  margin-left: -9rem;
+  margin-top: 1rem;
+}
+
+
+.choc-frog-front {
+  margin-left: 22rem;
+  margin-top: -32rem;
+}
+
+.choc-frog-container {
+}
+
+.choc-frog-background {
+  background-color: rgb(57,59,113);
+  width: 20rem;
+  height: 20rem;
+  margin-left: 7rem;
+  margin-top: -27rem;
+}
+
+
+
+.char-scroll-container {
+  margin-top: -39rem; /*lower the number, goes to the bottom*/
+  margin-left: 52rem; /* lower the number, goes to the left*/
+}
+
+.hp-scroll {
+  width: 18.5rem;
+}
