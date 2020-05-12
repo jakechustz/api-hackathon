@@ -9,10 +9,30 @@
 }
 
 .video-container {
+  margin-right: 45rem;
+}
+
+.daily-prophet-container {
   margin-left: -11rem;
 }
 
 .video-holder {
   width: 500px;
   height: auto;
+}
+
+.choc-frog-front {
+  margin-left: 22rem;
+  margin-top: -32rem;
+}
+
+.choc-frog-container {
+}
+
+.choc-frog-background {
+  background-color: rgb(57,59,113);
+  width: 20rem;
+  height: 20rem;
+  margin-left: 7rem;
+  margin-top: -27rem;
 }
