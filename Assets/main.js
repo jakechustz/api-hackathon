@@ -1,9 +1,10 @@
+
 function getVideo() {
   $.ajax({
     type: 'GET',
     url: 'https://www.googleapis.com/youtube/v3/search',
     data: {
-      key: 'AIzaSyBvfxzWGh7KkbNi3DeIU03A_YW2oIVQ9Fk',
+      key: googleAPIKey,
       q: "harry potter sorting hat",
       part: 'snippet',
       maxResults: 1,
@@ -24,3 +25,4 @@ function embedVideo(data) {
 }
 
 getVideo();
+console.log("My API Key:", googleAPIKey)
