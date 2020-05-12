@@ -1,3 +1,7 @@
+var charScrollContainer = document.querySelector('.char-scroll-container');
+var scrollDisplay = new ScrollDisplay(charScrollContainer);
+var frogapp = new FrogApp(scrollDisplay);
+frogapp.start();
 
 function getVideo() {
   $.ajax({
@@ -25,4 +29,3 @@ function embedVideo(data) {
 }
 
 getVideo();
-console.log("My API Key:", googleAPIKey)
