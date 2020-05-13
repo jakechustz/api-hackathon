@@ -25,4 +25,3 @@ function embedVideo(data) {
 }
 
 getVideo();
-console.log("My API Key:", googleAPIKey)
