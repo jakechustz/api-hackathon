@@ -20,34 +20,51 @@
         <img src="./Assets/Images/dailyprophet1.png" alt="daily prophet newspaper" class="newspaper">
   </div>
 
+  <div class="crest-container">
+    <img src="./Assets/Images/housecrest.png" alt="hogwarts crest" class="crest-img">
+  </div>
+
   <div class="choc-frog-container">
         <div class="choc-frog-front">
-      <img src="./Assets/Images/chocofrawg1_1.png" alt="chocolate frog box front side">
+      <img src="./Assets/Images/chocofrawg1_1.png" alt="chocolate frog box front side" class="choc-frog-image">
   <div class="choc-frog-background"></div>
   </div>
   <div class="char-scroll-container">
-    <img src="./Assets/Images/hpscroll1.png" alt="scroll" class="hp-scroll">
-    <div class="char-scroll-data"></div> <!-- similar to the tbody in sgt -->
+    <!-- <img src="./Assets/Images/hpscroll1.png" alt="scroll" class="hp-scroll">-->
+    <div class="char-scroll-data">
+      <div class="table-container">
+  <table class="table table-striped">
+    <thead class="thead-dark">
+      <tr>
+        <th scope="col">Name</th>
+        <th scope="col">House</th>
+      </tr>
+    </thead>
+    <tbody>
+    </tbody>
+  </table>
+</div>
+<ul class="list">
+</ul>
+    </div> <!-- similar to the tbody in sgt -->
   </div>
 
+<form>
+  <div class="radio-button-container">
+    <p></p>
+    <input type="radio" id="Gryffindor" name="house" value="Gryffindor">
+    <label for="Gryffindor" class="g-button"></label>
+    <input type="radio" id="Slytherin" name="house" value="Slytherin">
+    <label for="Slytherin" class="s-button"></label><br>
+    <input type="radio" id="Hufflepuff" name="house" value="Hufflepuff">
+    <label for="Hufflepuff" class="h-button"></label>
+    <input type="radio" id="Ravenclaw" name="house" value="Ravenclaw">
+    <label for="ravenclaw" class="r-button"></label>
+  </div>
+</form>
 
+  </div>
 </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.js"></script>
 <script src="./Assets/config.js"></script>
