@@ -21,7 +21,7 @@ function getVideo() {
 }
 
 function embedVideo(data) {
-  $('iframe').attr('src', 'https://www.youtube.com/embed/' + data.items[0].id.videoId)
+  $('iframe').attr('src', 'https://www.youtube.com/embed/' + data.items[0].id.videoId + '?start=80');
 }
 
 getVideo();

@@ -67,9 +67,13 @@ body {
 
 .table-container {
   margin-top: -20rem;
-  width: 10rem;
+  width: 15rem;
+  height: 40rem;
   margin-left: 7rem;
   position: absolute;
+  overflow: hidden;
+  overflow-y: scroll;
+  border-radius: 25px;
 }
 
 #table-header {
@@ -107,4 +111,8 @@ form {
 width: 25rem;
   margin-top: -55rem;
   margin-left: 27rem;
+}
+
+.table {
+   background-color: lightcoral;
 }

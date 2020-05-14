@@ -10,12 +10,26 @@ function clickSlytherin() {
   houseKey = 'Slytherin';
 }
 */
+var th = document.querySelector("th");
+th.addEventListener("onload", hidden());
+
+
+function hidden () {
+  document.getElementById("name").style.visibility = "hidden";
+  document.getElementById("tableid").style.visibility = "hidden";
+}
+
+
 var form = document.querySelector("form");
 form.addEventListener("change", function () {
   console.log(event.target.value);
+  document.getElementById("name").style.visibility = "visible";
+  document.getElementById("tableid").style.visibility = "visible";
   houseKey = event.target.value;
   app.getGrades();
 })
+
+
 
 
 class GradeTable {
@@ -28,12 +42,10 @@ class GradeTable {
     for (var ii = 0; ii < characters.length; ii++) {
       var tableRow = document.createElement('tr');
       var nameEl = document.createElement('td');
-      var houseEl = document.createElement('td');
 
       nameEl.textContent = characters[ii].name;
-      houseEl.textContent = characters[ii].house;
 
-      tableRow.append(nameEl, houseEl);
+      tableRow.append(nameEl);
       tbody.append(tableRow);
     }
   }
