@@ -114,5 +114,21 @@ width: 25rem;
 }
 
 .table {
-   background-color: lightcoral;
+
+}
+
+.table-color-g{
+background-color: lightcoral;
+}
+
+.table-color-s{
+background-color: green;
+}
+
+.table-color-h{
+background-color: yellow;
+}
+
+.table-color-r{
+background-color: lightblue;
 }

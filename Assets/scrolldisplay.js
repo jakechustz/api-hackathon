@@ -27,9 +27,20 @@ form.addEventListener("change", function () {
   document.getElementById("tableid").style.visibility = "visible";
   houseKey = event.target.value;
   app.getGrades();
+  colorChange();
 })
 
-
+function colorChange() {
+  if(houseKey === 'Gryffindor') {
+    document.getElementById("tableid").style.backgroundColor = "lightcoral";
+  } else if (houseKey === 'Slytherin') {
+    document.getElementById("tableid").style.backgroundColor = "green";
+  } else if (houseKey === 'Hufflepuff') {
+    document.getElementById("tableid").style.backgroundColor = "yellow";
+  } else if (houseKey === 'Ravenclaw'){
+    document.getElementById("tableid").style.backgroundColor = "lightblue";
+  }
+}
 
 
 class GradeTable {
