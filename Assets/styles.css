@@ -36,6 +36,8 @@ body {
 }
 
 .choc-frog-container {
+  margin-top: 20rem;
+  background-color: red;
 }
 
 .choc-frog-background {
@@ -47,12 +49,86 @@ body {
 }
 
 
-
 .char-scroll-container {
   margin-top: -39rem; /*lower the number, goes to the bottom*/
   margin-left: 52rem; /* lower the number, goes to the left*/
+  height: 10rem;
 }
 
 .hp-scroll {
   width: 18.5rem;
+}
+
+
+
+.page-container {
+  margin-top: 2rem;
+}
+
+.table-container {
+  margin-top: -20rem;
+  width: 15rem;
+  height: 40rem;
+  margin-left: 7rem;
+  position: absolute;
+  overflow: hidden;
+  overflow-y: scroll;
+  border-radius: 25px;
+}
+
+#table-header {
+  margin-left: 2rem;
+}
+
+form {
+  margin-left: 32rem;
+  margin-top: -35rem;
+  width: 28rem;
+  padding: 1rem;
+}
+
+.g-button {
+  padding: 80px;
+}
+
+.s-button{
+  padding: 5px;
+}
+
+.h-button{
+  padding: 80px;
+}
+
+.r-button{
+  padding: 5px;
+}
+
+
+.crest-container {
+}
+
+.crest-img {
+width: 25rem;
+  margin-top: -55rem;
+  margin-left: 27rem;
+}
+
+.table {
+
+}
+
+.table-color-g{
+background-color: lightcoral;
+}
+
+.table-color-s{
+background-color: green;
+}
+
+.table-color-h{
+background-color: yellow;
+}
+
+.table-color-r{
+background-color: lightblue;
 }
