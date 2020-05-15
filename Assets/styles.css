@@ -4,7 +4,19 @@ body {
   background-size: 90rem 70rem;
 }
 
+@font-face {
+    font-family: 'primetime';
+    src: url('./PRIMETIME\ ∏\ PERSONAL\ USE\ ONLY.ttf');
+    font-weight: normal;
+    font-style: normal;
+  }
 
+  @font-face {
+    font-family: 'harryp';
+    src: url('./HARRYP__.TTF');
+    font-weight: normal;
+    font-style: normal;
+  }
 
 
 .newspaper {
@@ -114,7 +126,7 @@ width: 25rem;
 }
 
 .table {
-
+font-family: 'primetime';
 }
 
 .table-color-g{
