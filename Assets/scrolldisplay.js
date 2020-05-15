@@ -17,18 +17,28 @@ th.addEventListener("onload", hidden());
 function hidden () {
   document.getElementById("name").style.visibility = "hidden";
   document.getElementById("tableid").style.visibility = "hidden";
+
+  document.getElementById("gryff-headline").style.visibility = "hidden";
+  document.getElementById("sly-headline").style.visibility = "hidden";
+  document.getElementById("huffle-headline").style.visibility = "hidden";
+  document.getElementById("raven-headline").style.visibility = "hidden";
 }
 
 
 var form = document.querySelector("form");
 form.addEventListener("change", function () {
+  showTableElements();
   console.log(event.target.value);
-  document.getElementById("name").style.visibility = "visible";
-  document.getElementById("tableid").style.visibility = "visible";
   houseKey = event.target.value;
   app.getGrades();
   colorChange();
+  headlineChange();
 })
+
+function showTableElements() {
+  document.getElementById("name").style.visibility = "visible";
+  document.getElementById("tableid").style.visibility = "visible";
+}
 
 function colorChange() {
   if(houseKey === 'Gryffindor') {
@@ -41,6 +51,39 @@ function colorChange() {
     document.getElementById("tableid").style.backgroundColor = "lightblue";
   }
 }
+
+function headlineChange() {
+  if(houseKey === 'Gryffindor') {
+    document.getElementById('gryff-headline').style.visibility = "visible";
+    document.getElementById('gryff-headline').style.color = "lightcoral";
+    document.getElementById('sly-headline').style.visibility = "hidden";
+    document.getElementById('huffle-headline').style.visibility = "hidden";
+    document.getElementById('raven-headline').style.visibility = "hidden";
+    document.getElementById('intro-headline').style.visibility = "hidden";
+  } else if (houseKey === 'Slytherin') {
+    document.getElementById('sly-headline').style.visibility = "visible";
+    document.getElementById('sly-headline').style.color = "green";
+    document.getElementById('gryff-headline').style.visibility = "hidden";
+    document.getElementById('huffle-headline').style.visibility = "hidden";
+    document.getElementById('raven-headline').style.visibility = "hidden";
+    document.getElementById('intro-headline').style.visibility = "hidden";
+  } else if (houseKey === 'Hufflepuff') {
+    document.getElementById('huffle-headline').style.visibility = "visible";
+    document.getElementById('huffle-headline').style.color = "yellow";
+    document.getElementById('gryff-headline').style.visibility = "hidden";
+    document.getElementById('sly-headline').style.visibility = "hidden";
+    document.getElementById('raven-headline').style.visibility = "hidden";
+    document.getElementById('intro-headline').style.visibility = "hidden";
+  } else if (houseKey === 'Ravenclaw') {
+    document.getElementById('raven-headline').style.visibility = "visible";
+    document.getElementById('raven-headline').style.color = "lightblue";
+    document.getElementById('gryff-headline').style.visibility = "hidden";
+    document.getElementById('sly-headline').style.visibility = "hidden";
+    document.getElementById('huffle-headline').style.visibility = "hidden";
+    document.getElementById('intro-headline').style.visibility = "hidden";
+  }
+}
+
 
 
 class GradeTable {

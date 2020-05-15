@@ -79,9 +79,9 @@ body {
 
 .table-container {
   margin-top: -20rem;
-  width: 15rem;
+  width: 18rem;
   height: 40rem;
-  margin-left: 7rem;
+  margin-left: 5.5rem;
   position: absolute;
   overflow: hidden;
   overflow-y: scroll;
@@ -116,9 +116,6 @@ form {
 }
 
 
-.crest-container {
-}
-
 .crest-img {
 width: 25rem;
   margin-top: -55rem;
@@ -126,7 +123,8 @@ width: 25rem;
 }
 
 .table {
-font-family: 'primetime';
+font-family: 'harryp';
+font-size: 2rem;
 }
 
 .table-color-g{
@@ -143,4 +141,47 @@ background-color: yellow;
 
 .table-color-r{
 background-color: lightblue;
+}
+
+.headline {
+  position: absolute;
+  margin-top: -33.5rem;
+  margin-left: 6.25rem;
+  color: azure;
+  font-family: 'harryp';
+  font-size: 7.5rem;
+}
+
+#huffle-headline {
+  font-size: 7rem;
+  text-shadow: 3px 3px black;
+}
+
+#raven-headline {
+  font-size: 7rem;
+  margin-left: 8rem;
+  text-shadow: 3px 3px black;
+}
+
+#sly-headline {
+  text-shadow: 3px 3px black;
+  margin-left: 8.25rem;
+}
+
+#gryff-headline {
+  text-shadow: 3px 3px black;
+}
+
+#name {
+  text-shadow: 3px 3px black;
+  text-align: center;
+  font-size: 3rem;
+}
+
+#intro-headline {
+  font-size: 7.5rem;
+  text-align: center;
+  color: gold;
+  text-shadow: 4px 4px black;
+  margin-left: 63rem;
 }
